@@ -10976,7 +10976,7 @@ section.resume-section .resume-section-content {
     max-width: 900px; /* Adjust this value as needed */
 }
 
-.carousel-item img {  
+.carousel-img {  
   height: 400px;
   object-fit: contain; /* Keeps aspect ratio and prevents cropping */
 }
