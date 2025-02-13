@@ -10972,7 +10972,7 @@ section.resume-section .resume-section-content {
 }
 
 .carousel {
-  max-width: 50%; /* Ensure it takes up full width of the parent container */
+  max-width: 75%; /* Ensure it takes up full width of the parent container */
 }
 
 .carousel-img {
