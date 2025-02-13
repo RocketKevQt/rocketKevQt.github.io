@@ -10970,3 +10970,21 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+
+.carousel{
+    max-width: 900px; /* Adjust this value as needed */
+}
+
+.carousel-item img {  
+  height: 400px;
+  object-fit: contain; /* Keeps aspect ratio and prevents cropping */
+}
+
+.custom-carousel-icon {
+    filter: brightness(0.3); /* Darkens the default icons */
+    background-color: rgba(0, 0, 0, 0.3); /* Adds a dark background */
+    color: rgba(0, 0, 0, 1);
+    border-radius: 25%; /* Optional: Makes them circular */
+    padding: 5px; /* Adds space around the icon */
+}
