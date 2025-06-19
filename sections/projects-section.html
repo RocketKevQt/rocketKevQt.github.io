@@ -1,11 +1,11 @@
 <div class="resume-section-content">
     <h2 class="mb-5">Projets Universitaire et Personnels</h2>
-    <h3 class="mb-4">Projets en C++ </h2>
+    <h3 class="mb-4">Projets en C++ </h3>
     <ul class="fa-ul mb-4">
         <li> 
             <div class="flex-grow-1">
                 <h4 class="subheading mb-4" title="Voir le dépot gitlab"> 
-                        <a href=https://gitlab.com/turboturtle/turboturtle target="_blank" >  <img src="assets/Icons/turboturtle.png" alt="logo TurboTurtle" width="42"> TurboTurtle : Application de création de dessin animé en direct </a>  </h4>
+                        <a  href=https://gitlab.com/turboturtle/turboturtle target="_blank" >  <img class="app-icon" src="assets/Icons/turboturtle.png" alt="logo TurboTurtle" width="42"> TurboTurtle : Application de création de dessin animé en direct </a>  </h4>
                 <div class="subheading mb-4"> Technologies Utilisées :  </div>
                 <p>Logiciel de Creation de dessin animé/ stop motion / animation hybride conçu pour la diffusion en direct.</p>
                 <div> 
@@ -47,23 +47,27 @@
                     <!-- Carousel Items -->
                     <div class="carousel-inner  mb-4">
                         <div class="carousel-item active">
+                            <div class = "carousel-image-title" >Importation d'une animation depuis un fichier GIF </div>
                             <div class="d-flex justify-content-center">
-                                <img class = "carousel-img" src="assets/TurboTurtle/Importing_From_Gif.png" class="d-block w-100" alt="Importing From Gif">
+                                <img class = "carousel-img" src="assets/img/TurboTurtle/Importing_From_Gif.png" class="d-block w-100" alt="Importing From Gif">
                             </div>
                         </div>
                         <div class="carousel-item">
+                            <div class = "carousel-image-title" >Diffusion d'une Animation depuis le logiciel </div>
                             <div class="d-flex justify-content-center">
-                                <img class ="carousel-img" src="assets/TurboTurtle/Broadcasting_Animation.png" class="d-block w-100" alt="Broadcasting Animation">
+                                <img class ="carousel-img" src="assets/img/TurboTurtle/Broadcasting_Animation.png" class="d-block w-100" alt="Broadcasting Animation">
                             </div>
                         </div>
                         <div class="carousel-item">
+                            <div class = "carousel-image-title" >Animation dessinée dans le logiciel </div>
                             <div class="d-flex justify-content-center">
-                                <img class ="carousel-img" src="assets/TurboTurtle/Animation_Dessinee.png" class="d-block w-100" alt="Animation Dessinee">
+                                <img class ="carousel-img" src="assets/img/TurboTurtle/Animation_Dessinee.png" class="d-block w-100" alt="Animation Dessinee">
                             </div>
                         </div>
                         <div class="carousel-item">
+                            <div class = "carousel-image-title" >Résultat de l'exportation en fichier GIF </div>
                             <div class="d-flex justify-content-center">
-                                <img class = "carousel-img" src="assets/TurboTurtle/Fleur.gif" class="d-block w-100" alt="Résultat de l'animation dessinée">
+                                <img class = "carousel-img" src="assets/img/TurboTurtle/Fleur.gif" class="d-block w-100" alt="Résultat de l'animation dessinée">
                             </div>
                         </div>
                     </div>
@@ -77,10 +81,7 @@
                         <span class="custom-carousel-icon"><i class="fas fa-chevron-right"></i></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-
                 </div> 
-
-                
             </div>
         </li>
         <li> 
@@ -102,12 +103,11 @@
                     <li>Interface Attractive</li>
                     <li>Compilation en Flatpak pour la diffusion de l'application vers d'autres clients</li>
                     <li>Ajouter le support de suppression des messages</li>
+                    <li>Ajouter une interface de sélection d'emojis</li>
                 </ul>
                 <br>
                 <h4 class="subheading mb-4"> Objectfs Actuels : </h4>
-                <ul>
-                    <li>Ajouter une interface de sélection d'emojis</li>
-                    
+                <ul>                    
                     <li>Ajouter le support des réactions</li>
                     <li>Envoyer des médias (Image et Video avec un chiffrement)</li>
                     <li>Ajouter le support des GIFS</li>
@@ -124,13 +124,54 @@
                     <li>Json</li>
                     <li>Flatpak</li>
                 </ul>
+                <br>
+                <div class = "carousel-container">
+                    <!-- Carousel for Software Screenshots -->
+                    <div id="peertochatCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#peertochatCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#peertochatCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>                   
+                    </div>
+                    <!-- Carousel Items -->
+                    <div class="carousel-inner  mb-4">
+                        <div class="carousel-item active">
+                            <div class = "carousel-image-title" >Envoi de messages Inter Application </div>
+                            <div class="d-flex justify-content-center">
+                                
+                                <img class = "carousel-img" src="assets/img/peertochat/Envoi-Messages-inter-Application.png" class="d-block w-150" alt="Envoi de Messages inter Applications">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class = "carousel-image-title">Interface du sélécteur d'emoji</div>
+                            <div class="d-flex justify-content-center">
+                                <img class ="carousel-img" src="assets/img/peertochat/Interface-Emoji-Picker.png" class="d-block w-150" alt="Interface Emoji Picker">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Buttons with Font Awesome Icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#peertochatCarousel" data-bs-slide="prev">
+                        <span class="custom-carousel-icon"><i class="fas fa-chevron-left"></i></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#peertochatCarousel" data-bs-slide="next">
+                        <span class="custom-carousel-icon"><i class="fas fa-chevron-right"></i></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div> 
+                </div>
+                
+
+            </div>
             </div>
             <br>
         </li>
         <li> 
             <div class="flex-grow-1">
-                <h4 class="subheading mb-4" title="Voir le dépot gitlab"> 
-                        <a href=https://gitlab.com/QtPocalypse/qt_basic_text_editor target="_blank">
+                <h4 class="subheading mb-4" title="Voir le dépot gitlab">     
+                    <a href=https://gitlab.com/QtPocalypse/qt_basic_text_editor target="_blank">
                         Qt Basic Text Editor : Editeur de text Basique </a>  
                 </h4>
                 <div class="subheading mb-4"> Technologies Utilisées :  </div>
@@ -141,4 +182,102 @@
             </div>
         </li>
     </ul>
+        <h3 class="mb-4">Projets Web </h3>
+            <div class="flex-grow-1">
+        <h4 class="subheading mb-4" title="Voir le dépôt GitLab">
+            <a href="https://gitlab.com/QtPocalypse/fnaps" target="_blank">
+                <img class="app-icon" src="assets/Icons/fnap-logo.png" alt="logo Fnap" width="42">
+
+                Fnap : Faux réseau de partage d’images
+            </a>
+        </h4>
+        <div class="subheading mb-4">Technologies Utilisées :</div>
+        <ul>
+            <li>Angular 20 (Standalone)</li>
+            <li>TypeScript</li>
+            <li>SCSS</li>
+            <li>HTML5</li>
+            <li>JSON Server (Fake API REST)</li>
+        </ul>
+        <br>
+        <h4>Objectifs Atteints :</h4>
+        <ul>
+            <li>Afficher une liste de contenus depuis une base JSON simulée</li>
+            <li>Créer un post avec image, titre, description et localisation</li>
+            <li>Prévisualisation en temps réel du contenu posté</li>
+            <li>Système de likes persistant</li>
+            <li>Système de fausse authentification (guards + redirection)</li>
+        </ul>
+        <br>
+        <h4>Description :</h4>
+        <p>
+            Fnap est une application web de type "réseau social" développée pour apprendre Angular 
+            à travers une démarche progressive, basée sur deux cours OpenClassrooms. L'interface sombre et moderne
+            met en avant les images postées par les utilisateurs. Le backend est simulé grâce à JSON Server. 
+            Le projet met l’accent sur l’UX (prévisualisation, feedbacks visuels) et une architecture en sous dossiers propre à Angular Standalone.
+        </p>
+        <br>
+        <!-- Carousel for Software Screenshots -->
+        <div id="fnapCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#fnapCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#fnapCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#fnapCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#fnapCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#fnapCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner mb-4">
+                <div class="carousel-item active">
+                    <div class="carousel-image-title">Page d’accueil avec logo</div>
+                    <div class="d-flex justify-content-center">
+                        <img class="carousel-img" src="assets/img/fnaps/LandingPage.png" class="d-block w-100" alt="Landing Page">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-title">Liste des Fnaps</div>
+                    <div class="d-flex justify-content-center">
+                        <img class="carousel-img" src="assets/img/fnaps/FnapList.png" class="d-block w-100" alt="Liste des contenus">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-title">Création d’un nouveau Fnap</div>
+                    <div class="d-flex justify-content-center">
+                        <img class="carousel-img" src="assets/img/fnaps/FormulaireNouveauFnap.png" class="d-block w-100" alt="Formulaire de création">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-title">Création d’un nouveau Fnap avec prévisualisation</div>
+                    <div class="d-flex justify-content-center">
+                        <img class="carousel-img" src="assets/img/fnaps/FormulaireNouveauFnapPreview.png" class="d-block w-100" alt="Formulaire de création">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-title">Fausse page de connexion protégée par un guard</div>
+                    <div class="d-flex justify-content-center">
+                        <img class="carousel-img" src="assets/img/fnaps/Login.png" class="d-block w-100" alt="Page de login">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons with Font Awesome Icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#fnapCarousel" data-bs-slide="prev">
+                <span class="custom-carousel-icon"><i class="fas fa-chevron-left"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#fnapCarousel" data-bs-slide="next">
+                <span class="custom-carousel-icon"><i class="fas fa-chevron-right"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+                                
+
+
+
+        </div>
+    </ul>
+
+
 </div>
