@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My GitHub Page</title>
+</head>
+<body>
+  <div id="header"></div>
+  <div id="main-content"></div>
+  <div id="footer"></div>
+
+  <script>
+    async function includeHTML(id, file) {
+      const res = await fetch(file);
+      if (res.ok) {
+        document.getElementById(id).innerHTML = await res.text();
+      } else {
+        console.error(`Could not load ${file}: ${res.statusText}`);
+      }
+    }
+
+    includeHTML("main-content", "index.html.bak");
+  </script>
+</body>
+</html>
