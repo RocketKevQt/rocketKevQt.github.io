@@ -12,6 +12,7 @@
         <script src="js/scripts.js"  defer></script>
         <script data-goatcounter="https://rocketkevqt.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -45,7 +46,6 @@
         <div class="container-fluid p-0">
             <hr class="m-0" />
             <section class="resume-section" id="a-propos"></section>
-            
             <hr class="m-0" />
             <section class = "resume-section" id="experiences"></section>
             <hr class="m-0" />
@@ -56,6 +56,8 @@
             <section class="resume-section" id="interets"></section>
             <hr class="m-0" />
             <section class="resume-section" id="projets"></section>
+
+            <button id="download">Télécharger en PDF</button>
 
         </div>
           <script>
@@ -68,13 +70,34 @@
                 }
             }
 
-            includeHTML("a-propos", "sections/about-section.html");
-            includeHTML("experiences", "sections/experiences-section.html");
-            includeHTML("formation", "sections/formation-section.html");
-            includeHTML("competences","sections/competences-section.html");
-            includeHTML("interets","sections/interests-section.html");
-            includeHTML("projets", "sections/projects-section.html")
 
+        async function loadAllSections() {
+            await Promise.all([
+                includeHTML("a-propos", "sections/about-section.html"),
+                includeHTML("experiences", "sections/experiences-section.html"),
+                includeHTML("formation", "sections/formation-section.html"),
+                includeHTML("competences", "sections/competences-section.html"),
+                includeHTML("interets", "sections/interests-section.html"),
+                includeHTML("projets", "sections/projects-section.html")
+            ]);
+
+            const downloadButton = document.getElementById("download");
+            downloadButton.disabled = false;
+            downloadButton.addEventListener("click", () => {
+            const element = document.body;
+            const opt = {
+                margin:       0.5,
+                filename:     'CV_Kevin_DIDIER.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, useCORS: true },
+                jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().set(opt).from(element).save();
+            console.log("clicked !");
+            });
+            }; // 500ms suffisent dans la plupart des cas
+
+        loadAllSections();
 
         </script>
     </body>
