@@ -73,12 +73,12 @@
 
         async function loadAllSections() {
             await Promise.all([
-                includeHTML("a-propos", "sections/about-section.html"),
-                includeHTML("experiences", "sections/experiences-section.html"),
-                includeHTML("formation", "sections/formation-section.html"),
-                includeHTML("competences", "sections/competences-section.html"),
-                includeHTML("interets", "sections/interests-section.html"),
-                includeHTML("projets", "sections/projects-section.html")
+                includeHTML("a-propos", "/sections/about-section.html"),
+                includeHTML("experiences", "/sections/experiences-section.html"),
+                includeHTML("formation", "/sections/formation-section.html"),
+                includeHTML("competences", "/sections/competences-section.html"),
+                includeHTML("interets", "/sections/interests-section.html"),
+                includeHTML("projets", "/sections/projects-section.html")
             ]);
 
             const downloadButton = document.getElementById("download");
